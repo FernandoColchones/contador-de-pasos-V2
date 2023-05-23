@@ -20,8 +20,8 @@ basic.showNumber(0)
 basic.pause(2000)
 basic.clearScreen()
 basic.forever(function () {
-    if (input.acceleration(Dimension.Strength) > 1500) {
-        steps += 1
-        basic.pause(100)
+    if (input.acceleration(Dimension.X) > 1500) {
+        steps += 2
+        basic.pause(250)
     }
 })
